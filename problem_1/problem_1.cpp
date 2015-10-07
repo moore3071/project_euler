@@ -6,7 +6,8 @@ int main()
 	int place2 = 5;
 	int total = 0;
 	while(place<1000||place2<1000){
-		total += place;
+		if(place%5!=0)
+			total += place;
 		place+=3;
 		if(place2<1000){
 			total+=place2;
